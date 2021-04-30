@@ -89,7 +89,7 @@ def get_opinions(base_file, markable_file):
                               "strong": "average"}
 
     new = {}
-    new["idx"] = base_file.split("/")[-1][:-10]
+    new["sent_id"] = base_file.split("/")[-1][:-10]
     new["bdir"] = re.findall("../DarmstadtServiceReviewCorpus/(.*)/basedata", base_file)[0]
 
 
@@ -326,7 +326,7 @@ def get_sentence_level_anns(document_level_anns):
 
     sent_anns = []
     bdir = document_level_anns["bdir"]
-    idx = document_level_anns["idx"]
+    idx = document_level_anns["sent_id"]
     text = document_level_anns["text"]
     opinions = document_level_anns["opinions"]
 
