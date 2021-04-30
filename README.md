@@ -15,7 +15,12 @@ This repo contains code to download and preprocess the following sentiment datas
     4. [MAMS](https://www.aclweb.org/anthology/D19-1654/): Restaurant reviews with multiple targets in each sentence.
 
 
-## Requirements
+## Dependencies
+
+- `Python3`
+- `lxml`
+- `numpy`
+- `nltk`
 
 
 ## Downloading and preprocessing the data
